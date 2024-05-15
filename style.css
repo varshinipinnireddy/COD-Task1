@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(90deg, rgb(161, 119, 201), rgb(102, 102, 208),rgb(210, 151, 224));
+    background-size: cover;
+  
+  }  
+  .listcontainer{
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    width: 40%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(224, 226, 228, 0.854);
+    align-content: center;
+  }
+  .grow{
+    height: 2rem;
+  }
+  #input,button{
+    opacity: 0.8;
+  }
+  .row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  }
+  .todo-app{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+  }
+  #input{
+    flex-grow: 1;
+  }
+  #list-container{
+    width: 100%;
+  }
+  button {
+    background-color: #a4d56c;
+    border-radius: 4px;
+    padding: 0.2rem;
+    width: 18%;
+    margin-left: 0.5rem;
+  }
+  h2{
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
+  }
+  #input:hover,button:hover{
+    opacity: 1;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: #0e0c0c;
+    background-color: rgba(113, 182, 198, 0.729);
+  }
+  .taskcontainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(47, 196, 216);
+    border: 2px solid rgb(212, 179, 245);
+    list-style-type: none;
+  }
+  .tasks{
+    flex-grow: 1;
+    border-radius: 2px;
+    list-style-type: none;
+  }
+  
+  .tickbefore{
+    opacity: 0.7;
+    text-align: center;
+  }
+  .taskCompleted{
+    opacity: 1;
+    background-color:rgb(58, 108, 161);
+  }
+  @media (max-width: 514px) {
+    button {              
+      margin-top: 1rem;
+      width: 100%;
+    }
+    input{
+      width: 50%;
+    }
+    h2{
+      font-weight: 500;
+    }
+  }
